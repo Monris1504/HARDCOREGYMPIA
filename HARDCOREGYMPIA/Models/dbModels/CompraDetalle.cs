@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
 
-namespace HARDCOREGYM.Models.dbModels
+namespace HARDCOREGYMPIA.Models.dbModels
 {
     [Table("CompraDetalle")]
     public partial class CompraDetalle

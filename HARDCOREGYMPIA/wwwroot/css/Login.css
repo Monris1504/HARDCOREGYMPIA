@@ -1,0 +1,65 @@
+﻿body {
+    background-color: #08468c;
+}
+
+#caja1 {
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 0px;
+    width: 500px;
+    margin: 0px auto;
+    color: #000000;
+    background: #bdbdbd;
+    border-radius: 5px 5px 5px 5px;
+    border: 2px solid black;
+    margin-top: -15%;
+    margin-left: -0.5%;
+}
+
+#logo {
+    width: 35%;
+    margin-left:-40%;
+}
+
+#sesion {
+    margin-left: 5%;
+    display: inline-block;
+}
+
+#caja2 {
+    font-family: sans-serif;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 500px;
+    margin: 0px auto;
+    color: #000000;
+    background: #86a8cf;
+    border-radius: 5px 5px 5px 5px;
+    border: 2px solid black;
+    margin-top: 10%;
+}
+
+p {
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.datos {
+    border: 1px solid;
+    border-radius: 5px;
+    margin-bottom: 2px;
+    width: 80%;
+    padding: 1%;
+}
+
+#redireccion {
+    font-family: sans-serif;
+    font-size: 15px;
+}

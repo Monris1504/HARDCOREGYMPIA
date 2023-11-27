@@ -1,0 +1,68 @@
+﻿@page
+@model RegisterModel
+@{
+    ViewData["Title"] = "Register";
+}
+@section Css {
+    <link rel="stylesheet" href="~/css/REGISTRO.css" rel="stylesheet" />
+}
+<div class="row">
+    
+        <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+            <div id="caja4">
+                <div id="caja3">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img id="logo2" src="~/IMG/logo.png" alt="">
+                            </div>
+                            <div class="col-md-9" id="registro">
+                                <p>REGISTRATE</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12" id="texto10">
+                            <p>CREA UNA CUENTA</p>
+                        </div>
+                        <div class="col-md-6" id="caja1">
+                            <p class="texto">Ingrese su Nombre</p>
+                            <input asp-for="Input.Nombre" class="datos2" type="text" placeholder="Nombre" aria-required="true">
+                            <span asp-validation-for="Input.Nombre" class="text-danger"></span>
+                            <br>
+                            <p class="texto">Ingrese su Apellido</p>
+                            <input asp-for="Input.Apellido" class="datos2" type="text" placeholder="Apellido" aria-required="true">
+                            <span asp-validation-for="Input.Apellido" class="text-danger"></span>
+                            <p class="texto">Ingrese su correo</p>
+                            <input asp-for="Input.Email" class="datos2" type="text" placeholder="Correo" aria-required="true">
+                            <span asp-validation-for="Input.Email" class="text-danger"></span>
+                            <br>
+                        </div>
+                        <div class="col-md-6 col-sm-12" id="caja2">
+                            <p class="texto">Crea una contraseña</p>
+                            <input asp-for="Input.Password" class="datos2" type="text" placeholder="Contraseña" aria-required="true">
+                            <span asp-validation-for="Input.Password" class="text-danger"></span>
+                            <br>
+                            <p class="texto">Confirme su contraseña</p>
+                            <input asp-for="Input.ConfirmPassword" class="datos2" type="text" placeholder="Confirme Contraseña" aria-required="true">
+                            <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+                            <br>
+                            <p class="texto">Ingrese su Telefono</p>
+                            <input asp-for="Input.PhoneNumber" class="datos2" type="text" placeholder="Telefono">
+                            <span asp-validation-for="Input.PhoneNumber" class="text-danger"></span>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            <button id="registerSubmit" type="submit" class="btn btn-lg btn-primary">Register</button>
+            </div>
+        </form>
+</div>
+<br>
+<br>
+<br>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

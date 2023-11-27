@@ -1,4 +1,5 @@
-using HARDCOREGYM.Models.dbModels;
+
+using HARDCOREGYMPIA.Models.dbModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;

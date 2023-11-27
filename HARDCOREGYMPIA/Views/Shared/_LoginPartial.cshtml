@@ -1,7 +1,6 @@
 ﻿@using Microsoft.AspNetCore.Identity
-@inject SignInManager<IdentityUser> SignInManager
-@inject UserManager<IdentityUser> UserManager
-
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
 
 <ul class="navbar-nav">
 @if (SignInManager.IsSignedIn(User))
@@ -17,10 +16,10 @@
 }
 else
 {
-        <div>
-            <a asp-area="Identity" asp-page="/Account/Register"><input type="button" class="btn-usuario" id="btn-iniciarsesion" value="Registrarse"></a>
-            <a asp-area="Identity" asp-page="/Account/Login"><input type="button" class="btn-usuario" id="btn-iniciarsesion" value="Iniciar Sesión"></a>
-        </div>
+    <div>
+        <a asp-area="Identity" asp-page="/Account/Register"><input type="button" class="btn-usuario" id="btn-iniciarsesion" value="Registrarse"></a>
+        <a asp-area="Identity" asp-page="/Account/Login"><input type="button" class="btn-usuario" id="btn-iniciarsesion" value="Iniciar Sesión"></a>
+    </div>
 }
 </ul>
 <style>

@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace HARDCOREGYM.Models.dbModels
+namespace HARDCOREGYMPIA.Models.dbModels
 {
     public partial class HARDCOREGYMContext : IdentityDbContext<ApplicationUser, IdentityRole<int>, int>
     {

@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Identity;
 
-namespace HARDCOREGYM.Models.dbModels
+namespace HARDCOREGYMPIA.Models.dbModels
 {
     public class ApplicationUser : IdentityUser<int>
     {
@@ -10,11 +10,11 @@ namespace HARDCOREGYM.Models.dbModels
         {
             Carritos = new HashSet<Carrito>();
         }
+        [StringLength(50)]
+        public string Nombre { get; set; } = null!;
 
-        public string Nombre { get; set; }
         [StringLength(50)]
         public string Apellido { get; set; } = null!;
-        [StringLength(50)]
         public int? Idplan { get; set; }
 
         [ForeignKey("Idplan")]
