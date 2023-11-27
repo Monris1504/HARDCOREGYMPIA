@@ -1,0 +1,150 @@
+﻿/*cuerpo de la pagina*/
+#cuerpocompleto {
+    background-color: #86a8cf;
+}
+
+#Bienvenido {
+    color: #e8490f;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 52px;
+    font-weight: bold;
+}
+
+.texto {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 16px;
+    color: #333333;
+    font-weight: 600;
+}
+
+#imggym {
+    height: 400px;
+    width: 900px;
+    border-radius: 20px;
+    border: 1px;
+}
+
+#cuerpomedio {
+    text-align: center;
+}
+
+#barra1 {
+    width: 666px;
+    height: 8px;
+    background: black;
+    opacity: 1;
+    border-radius: 10px;
+}
+
+#barra2 {
+    width: 600px;
+    opacity: 1;
+    border-radius: 10px;
+    height: 8px;
+    background: black;
+}
+
+#mejorplan {
+    background-color: #8516ee;
+    display: inline-block;
+    border: 1px solid;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+table {
+    font-size: 25px;
+    position: relative;
+    margin-top: auto;
+    width: 100%;
+}
+
+td {
+    border-color: black;
+    border: 1px solid;
+}
+
+.equis {
+    color: black;
+}
+
+#promocion {
+    font-size: 25px;
+    background-color: #cf170a;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    margin-left: 130px;
+    font-weight: 800;
+    color: white;
+}
+/*
+    Tarjetas de planes
+    */
+.Tarjeta {
+    border: 2px solid;
+    width: 250px;
+    background-color: #f4c200;
+    border-radius: 20px;
+    height: 430px;
+    padding: 10px;
+    margin-left: 20%;
+}
+
+.titulotar {
+    color: white;
+    text-align: center;
+}
+
+.contenidotar {
+    background-color: #f7e59c;
+    border: 2px solid;
+    padding: 10px;
+    border-radius: 10px;
+    height: 360px;
+    font-weight: 600;
+}
+
+.titulotarjeta {
+    font-weight: 800;
+}
+
+.Incluye {
+    font-size: 20px;
+    font-weight: 800;
+    margin-left: 30px;
+}
+
+.precio {
+    background-color: #cf170a;
+    height: 80px;
+    width: 250px;
+    border: 2px solid black;
+    margin-left: 20%;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.cantidad {
+    font-weight: 800;
+    font-size: 50px;
+    margin-left: 10%;
+    color: white;
+}
+
+.moneda {
+    display: inline-block;
+    max-width: 30px;
+    margin-left: 5px;
+    color: white;
+    font-weight: 600;
+}
+
+#cantidad2 {
+    margin-left: 18%;
+}

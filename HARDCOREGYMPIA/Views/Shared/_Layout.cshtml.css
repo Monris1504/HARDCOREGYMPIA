@@ -1,48 +1,145 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
-
-a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
+﻿/*Parte del header de hardcoregym en negro*/
+.header {
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    height: 20px;
 }
 
-a {
-  color: #0077cc;
+.col-sm-12 {
+    background-color: #26425a;
 }
 
-.btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+#fila2 {
+    background-color: #26425a;
+    height: 100%;
+}
+/*NavBar*/
+#logo {
+    margin-left: -17%;
+    margin-top: -5%;
+    width: 100%;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+.botonesdecambiodepagina {
+    background-color: #e0e0e0;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 10px;
+    font-weight: 700;
+    width: 20%;
 }
 
-.border-top {
-  border-top: 1px solid #e5e5e5;
-}
-.border-bottom {
-  border-bottom: 1px solid #e5e5e5;
+    .botonesdecambiodepagina:hover {
+        background-color: gray;
+    }
+
+#search-box {
+    border: 1px solid;
+    border-radius: 10px;
+    margin-bottom: 2px;
+    width: 100%;
 }
 
-.box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+.btn-usuario {
+    background-color: #e1cbd7;
+    border-radius: 10px;
+    padding: 5px;
+    border: 1px solid;
+    width: 40%;
 }
 
-button.accept-policy {
-  font-size: 1rem;
-  line-height: inherit;
+    .btn-usuario:hover {
+        background-color: lightcoral;
+    }
+
+#fila2izquierda {
+    margin-top: -15px;
+}
+
+#fila2medio {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#fila2derecha {
+    margin-top: 10px;
+    text-align: center;
+}
+
+/*Footer*/
+#footer {
+    background-color: black;
+    color: white;
+}
+
+#footerlogo {
+    text-align: center;
+}
+
+#logopt2 {
+    width: 396px;
+}
+
+#siguenos {
+    font-weight: bold;
+    color: white;
+    font-size: 29px;
+}
+
+#terminos {
+    font-weight: bold;
+    color: white;
+    font-size: 13px;
+    margin-left: 1%;
+}
+
+#linea1 {
+    height: 5px;
+    color: white;
+}
+
+#linea2 {
+    width: 50%;
+    margin-left: 25%;
+    color: white;
 }
 
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px;
+    padding: 10px 0;
+    background-color: #000000;
 }
+
+    .footer .social {
+        text-align: center;
+        padding-bottom: 25px;
+        color: #4b4c4d;
+    }
+
+        .footer .social a {
+            font-size: 24px;
+            color: inherit;
+            border: 1px solid #ccc;
+            width: 40px;
+            height: 40px;
+            line-height: 38px;
+            display: inline-block;
+            text-align: center;
+            border-radius: unset;
+            margin: 0 8px;
+            opacity: 0.75;
+        }
+
+            .footer .social a:hoover {
+                opacity: 0.9;
+            }
+
+    .footer ul {
+        margin-top: 0;
+        padding: 0;
+        list-style-type: none;
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 0;
+    }

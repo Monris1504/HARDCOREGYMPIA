@@ -7,41 +7,66 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/HARDCOREGYMPIA.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    @RenderSection("Css", false)
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">HARDCOREGYMPIA</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
+   <div class="container-border">
+        <div class="row">
+            <div class="col-sm-12">
+                <p class="header">HARDCOREGYM</p>
+            </div>
+        </div>
+        <div class="row" id="fila2">
+            <div class="col-md-3 col-sm-4" id="fila2izquierda">
+                <img src="/IMG/logo.png" id="logo" alt="">
+            </div>
+            <div class="col-md-6 col-sm-4" id="fila2medio">
+                <a asp-controller="Home" asp-action="INICIO"><input type="button" class="botonesdecambiodepagina" id="btn-inicio" value="Inicio"></a>
+                <a asp-controller="Home" asp-action="TIENDA"><input type="button" class="botonesdecambiodepagina" id="btn-tienda" value="Tienda"></a>
+                <a asp-controller="Home" asp-action="SUCURSALES"><input type="button" class="botonesdecambiodepagina" id="btn-sucursales" value="Sucursales"></a>
+                <a asp-controller="Home" asp-action="CONOCENOS"><input type="button" class="botonesdecambiodepagina" id="btn-conocenos" value="Conócenos!"></a>
+            </div>
+            <div class="col-md-3 col-sm-4" id="fila2derecha">
+                <input type="text" placeholder="Que estas buscando?" id="search-box">
+                <div>
                     <partial name="_LoginPartial" />
                 </div>
             </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2023 - HARDCOREGYMPIA - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
-    </footer>
+    </div>
+            @RenderBody()
+    <div class="container-border" id="footer">
+        <div class="row">
+            <div class="col-md-12" id="footerlogo">
+                <img id="logopt2" src="/IMG/logo.png" alt="">
+            </div>
+            <hr id="linea1" />
+            <div class="col-md-12" id="footerlogo">
+                <p id="siguenos">SIGUENOS</p>
+                <section class="footer">
+                    <div class="social">
+                        <a href="#"><i class="fab fa-instagram"></i></fa-instagram></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></fa-facebook></a>
+                        <a href="#"><i class="fab fa-twitter"></i></fa-instagram></a>
+                        <a href="#"><i class="fab fa-snapchat"></i></fa-instagram></a>
+                    </div>
+                </section>
+                <hr id="linea2" />
+            </div>
+            <div id="terminos" class="col-md-12">
+                <br>
+                <h5>Terminos y condiciones generales</h5>
+                <ul>
+                    <li>LAS PROMOCIONES NO SON TRASFERIBLES A TERCEROS</li>
+                    <li>PLAN COMPLETO Y PLAN PLUS. SE ADMITE HASTA 4 INVITADOS POR MES</li>
+                    <li>PROMOCIONES VALIDAS SOLO EN LA REPUBLICA MEXICANA</li>
+                    <li>NO SE ADMITIRA EL ACCESO A MENORES DE 12 AÑOS, QUIENES POR NORMATIVIDAD LEGAL NO LO TENGAN PERMITIDO</li>
+                </ul>
+            </div>
+            <br>
+        </div>
+    </div>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

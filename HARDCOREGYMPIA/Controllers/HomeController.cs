@@ -13,12 +13,22 @@ namespace HARDCOREGYMPIA.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public IActionResult INICIO()
         {
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult TIENDA()
+        {
+            return View();
+        }
+
+        public IActionResult CONOCENOS()
+        {
+            return View();
+        }
+
+        public IActionResult SUCURSALES()
         {
             return View();
         }
