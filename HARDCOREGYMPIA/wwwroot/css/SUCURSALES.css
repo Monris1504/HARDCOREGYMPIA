@@ -1,0 +1,44 @@
+﻿/*Contenido*/
+h1 {
+    font-size: 400%;
+    color: #000000;
+    text-align: center;
+}
+
+#Carrusel1 {
+    margin-left: 1%;
+    margin-bottom: 5%;
+    width: 100%;
+}
+
+.tit-suc {
+    font-size: 40px;
+    font-weight: 800;
+    color: white;
+}
+
+.subtit-suc {
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.car-txt {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#txt-1car {
+    margin-bottom: -1px;
+}
+
+#txt-2car {
+    margin-bottom: -1px;
+}
+
+.tarjeta-info {
+    width: 350px;
+}
+
+#cuerpocompleto {
+    background-color: #86a8cf;
+}

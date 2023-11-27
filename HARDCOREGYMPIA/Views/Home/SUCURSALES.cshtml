@@ -1,5 +1,106 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
+    ViewData["Title"] = "SUCURSALES";
 }
+@section Css {
+    <link rel="stylesheet" href="~/css/SUCURSALES.css" rel="stylesheet" />
+}
+<!--Contenido de sucursales-->
+<div id="cuerpocompleto">
+    <h1>Bienvenido</h1>
+    <hr>
+    <br>
+    <br>
+    <br>
+
+    <!--Carrousel de fotos-->
+    <div class="container-border">
+        <div class="row">
+            <div class="col-md-3">
+                <div id="Carrusel1" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="~/IMG/suc1.jpg" id="car-img1" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="~/IMG/suc1_2.jpg" id="car-img2" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="~/IMG/suc1_3.jpg" id="car-img3" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="tarjeta-info">
+                    <img class="estrellas" src="~/IMG/4 estrellas.png" alt="">
+                    <h5 class="tit-suc">Valle Oriente</h5>
+                    <h6 class="subtit-suc">Direccion</h6>
+                    <p class="car-txt">Av. Lázaro Cárdenas 100-Paseo de las Privanzas, Monterrey, NL-64750</p>
+                    <h6 class="subtit-suc">Horarios</h6>
+                    <p class="car-txt" id="txt-2car">Lun a Vie       6h-23h</p>
+                    <p class="car-txt" id="txt-1car">Sáb             8h-18h</p>
+                    <p class="car-txt">Dom/Festivos    8h-16h</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Carrusel de fotos 2-->
+    <div class="container-border">
+        <div class="row">
+            <div class="col-md-3">
+                <div id="Carrusel1" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="~/IMG/suc1.1.jpg" id="car-img1" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="~/IMG/suc21.jpg" id="car-img2" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="~/IMG/suc3.jpg" id="car-img3" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="tarjeta-info">
+                    <img class="estrellas" src="~/IMG/3 estrellas.png" alt="">
+                    <h5 class="tit-suc">Esfera</h5>
+                    <h5 class="tit-suc">Fashion Hall</h5>
+                    <h6 class="subtit-suc">Direccion</h6>
+                    <p class="car-txt">Av. la Rioja 245 - Residencial la Rioja, Monterrey,N.L.-64985</p>
+                    <h6 class="subtit-suc">Horarios</h6>
+                    <p class="car-txt" id="txt-2car">Lun a Vie       6h-23h</p>
+                    <p class="car-txt" id="txt-1car">Sáb             8h-18h</p>
+                    <p class="car-txt">Dom/Festivos    8h-16h</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
