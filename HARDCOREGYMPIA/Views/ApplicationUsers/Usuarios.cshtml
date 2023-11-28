@@ -1,0 +1,52 @@
+﻿@model IEnumerable<HARDCOREGYMPIA.Models.dbModels.ApplicationUser>
+
+@{
+    ViewData["Title"] = "Usuarios";
+}
+@section Css {
+    <link rel="stylesheet" href="~/css/Roles.css" rel="stylesheet" />
+}
+<h1>MENU ADMINISTRADOR</h1>
+<br>
+<div class="col-md-12" id="opcionesadmin">
+    <a href="USUARIOS_ROL.html"><input type="button" class="botonesdecambiodepagina" id="btn-usuariorol" value="Usuario y rol"></a>
+    <a href="PRODUCTOS.html"><input type="button" class="botonesdecambiodepagina" id="btn-productos" value="Productos"></a>
+    <a href="VENTAS.html"><input type="button" class="botonesdecambiodepagina" id="btn-ventas" value="Ventas"></a>
+    <a href="PLANES.html"><input type="button" class="botonesdecambiodepagina" id="btn-planes" value="Planes"></a><br>
+</div>
+<br>
+<br>
+<div class="centrartabla">
+        <table id="tabla" class="table table-striped table-dark">
+            <thead>
+                <tr class="centro">
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Apellido</th>
+                    <th scope="col">Plan</th>
+                    <th scope="col">Nombre de Usuario</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Telefono</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <th scope="row">@Html.DisplayFor(modelItem => item.Nombre)</th>
+                        <th scope="row">@Html.DisplayFor(modelItem => item.Apellido)</th>
+                        <th scope="row">@Html.DisplayFor(modelItem => item.IdplanNavigation.Idplan)</th>
+                        <th scope="row">@Html.DisplayFor(modelItem => item.UserName)</th>
+                        <th scope="row">@Html.DisplayFor(modelItem => item.Email)</th>
+                        <th scope="row">@Html.DisplayFor(modelItem => item.PhoneNumber)</th>
+                        <th scope="row">
+                            <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                            <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                            <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                        </th>
+                    </tr>
+                }
+            </tbody>
+        </table>
+</div>

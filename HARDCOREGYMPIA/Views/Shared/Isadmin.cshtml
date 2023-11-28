@@ -1,0 +1,26 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+@if (SignInManager.IsSignedIn(User))
+{
+    var user = await UserManager.GetUserAsync(User);
+    if (await UserManager.IsInRoleAsync(user, "Admin"))
+    {
+        <a asp-controller="ApplicationUsers" asp-action="Usuarios"><input type="button" class="botonesdecambiodepagina" id="btn-conocenos" value="Administrador"></a>
+    }
+}
+<style>
+    .botonesdecambiodepagina {
+        background-color: #e0e0e0;
+        padding: 10px;
+        border: 1px solid;
+        border-radius: 10px;
+        font-weight: 700;
+        width: 15%;
+    }
+
+        .botonesdecambiodepagina:hover {
+            background-color: gray;
+        }
+</style>

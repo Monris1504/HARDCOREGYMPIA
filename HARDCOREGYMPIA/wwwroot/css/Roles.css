@@ -1,0 +1,27 @@
+﻿body {
+    background-color: #86a8cf
+}
+/*Contenido*/
+h1 {
+    color: #e8490f;
+    font-size: 52px;
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+#opcionesadmin {
+    text-align: center;
+}
+
+#tabla {
+    width: 70%;
+    text-align:center;
+}
+
+.centro {
+    text-align: center;
+}
+.centrartabla{
+    margin-left: 23%;
+}
