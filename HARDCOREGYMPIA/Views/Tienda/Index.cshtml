@@ -1,0 +1,24 @@
+﻿@model IEnumerable<HARDCOREGYMPIA.Models.dbModels.Producto>
+
+@{
+    ViewData["Title"] = "Index";
+}
+@section Css {
+    <link rel="stylesheet" href="~/css/TIENDA.css" rel="stylesheet" />
+}
+<h1 class="titulo1">Productos</h1>
+<div class="container">
+    <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="col-md-4" id="cajacompleta">
+                    <div class="TarjetaProducto">
+                    <div class="titulo"><h5>@Html.DisplayFor(modelItem => item.Nombre)</h5></div>
+                    <div class="imagen"><img class="imagen-tarjeta" src="@Html.DisplayFor(modelItem => item.Image)" /></div>
+                    <div class="Preciodiv"><p class="precio">Precio: @Html.DisplayFor(modelItem => item.Precio)</p></div>
+                    <div class="carritodiv"><button class="Carrito">Agregar a Carrito</button></div>
+                    </div>
+                </div>
+            }
+    </div>
+</div>

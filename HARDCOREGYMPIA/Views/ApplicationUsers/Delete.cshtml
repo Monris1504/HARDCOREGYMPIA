@@ -3,7 +3,9 @@
 @{
     ViewData["Title"] = "Delete";
 }
-
+@section Css {
+    <link rel="stylesheet" href="~/css/FondoPantalla.css" rel="stylesheet" />
+}
 <h1>Delete</h1>
 
 <h3>Are you sure you want to delete this?</h3>
@@ -118,6 +120,6 @@
     <form asp-action="Delete">
         <input type="hidden" asp-for="Id" />
         <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Back to List</a>
+        <a asp-action="Usuarios">Back to List</a>
     </form>
 </div>

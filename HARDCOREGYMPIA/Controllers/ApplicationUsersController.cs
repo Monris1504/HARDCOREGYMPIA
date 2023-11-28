@@ -62,7 +62,7 @@ namespace HARDCOREGYMPIA.Controllers
             {
                 _context.Add(applicationUser);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Usuarios));
             }
             ViewData["Idplan"] = new SelectList(_context.Plans, "Idplan", "Idplan", applicationUser.Idplan);
             return View(applicationUser);
@@ -115,7 +115,7 @@ namespace HARDCOREGYMPIA.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Usuarios));
             }
             ViewData["Idplan"] = new SelectList(_context.Plans, "Idplan", "Idplan", applicationUser.Idplan);
             return View(applicationUser);
@@ -156,7 +156,7 @@ namespace HARDCOREGYMPIA.Controllers
             }
             
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction(nameof(Usuarios));
         }
 
         private bool ApplicationUserExists(int id)

@@ -1,0 +1,46 @@
+﻿body {
+    background-color: #86a8cf;
+}
+.TarjetaProducto{
+    background: white;
+    width: 220px;
+    height: 350px;
+    border-radius: 10px;
+    border: 1px solid;
+    padding: 10px;
+    margin-left: 1%;
+    margin-bottom: 1%;
+    margin-bottom: 5%;
+}
+.titulo{
+    background-color: lightgray;
+    border-radius:10px;
+    text-align: center;
+}
+.imagen-tarjeta{
+    width:70%
+}
+.imagen {
+    text-align:center;
+}
+.Preciodiv{
+    text-align: center;
+}
+.precio{
+    font-weight: 700;
+}
+.Carrito{
+    background-color: yellow;
+    border: 2px solid;
+    border-radius: 10px;
+    font-weight:500;
+}
+.carritodiv{
+    text-align:center;
+}
+.titulo1{
+    text-align:center;
+}
+#cajacompleta {
+    text-align:center;
+}
