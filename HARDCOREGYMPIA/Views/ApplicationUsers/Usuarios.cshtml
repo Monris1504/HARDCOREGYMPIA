@@ -9,10 +9,10 @@
 <h1>MENU ADMINISTRADOR</h1>
 <br>
 <div class="col-md-12" id="opcionesadmin">
-    <a href="USUARIOS_ROL.html"><input type="button" class="botonesdecambiodepagina" id="btn-usuariorol" value="Usuario y rol"></a>
-    <a href="PRODUCTOS.html"><input type="button" class="botonesdecambiodepagina" id="btn-productos" value="Productos"></a>
-    <a href="VENTAS.html"><input type="button" class="botonesdecambiodepagina" id="btn-ventas" value="Ventas"></a>
-    <a href="PLANES.html"><input type="button" class="botonesdecambiodepagina" id="btn-planes" value="Planes"></a><br>
+    <a asp-controller="ApplicationUsers" asp-action="Usuarios"><input type="button" class="botonesdecambiodepagina" id="btn-usuariorol" value="Usuario y rol"></a>
+    <a asp-controller="Productoes" asp-action="Productos"><input type="button" class="botonesdecambiodepagina" id="btn-productos" value="Productos"></a>
+    <a asp-controller="Admin" asp-action="Ventas"><input type="button" class="botonesdecambiodepagina" id="btn-ventas" value="Ventas"></a>
+    <a asp-controller="Admin" asp-action="Planes"><input type="button" class="botonesdecambiodepagina" id="btn-planes" value="Planes"></a><br>
 </div>
 <br>
 <br>

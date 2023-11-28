@@ -19,7 +19,7 @@ namespace HARDCOREGYMPIA.Controllers
         }
 
         // GET: Productoes
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Productos()
         {
               return _context.Productos != null ? 
                           View(await _context.Productos.ToListAsync()) :
