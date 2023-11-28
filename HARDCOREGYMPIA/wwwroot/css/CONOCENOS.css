@@ -13,6 +13,7 @@
 .texto-superpuesto {
     position: absolute;
     margin-top: -15%;
+    margin-left: 140px;
 }
 
 p {
